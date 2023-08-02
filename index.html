@@ -4,44 +4,92 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" href="assets/images/favicon-32x32.png" type="image/x-icon">
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="js/script.js" defer></script>
   <title>Notification Page</title>
 </head>
 <body>
-  
+    <div class="container">
+      <div class="sub-container">
+        <header>
+          <h1>Notifications<span class="count" data-counts>0</span></h1>
+          <h6>Mark all as read</h6>
+        </header>
+        <main>
+          <article>
+            <ul>
+              <li>
+                <div class="section">
+                  <div class="image"><img src="assets/images/avatar-mark-webber.webp"></div>
+                  <div class="comment"><p><b>Mark Webber</b> reacted to you recent post <b>My first tournament today!</b><span class="dot"></span></p>
+                    <p>1m ago</p>
+                  </div>
+                </div>
+              </li>
 
-  <header>
-    <h1>Notifications <span>3</span></h1>
-    <h6>Mark all as read</h6>
-  </header>
-  <main>
-    <article>
-      <ul>
-        <li><img src="assets/images/avatar-mark-webber.webp" alt="" srcset="">
-          <p>Mark Webber reacted to you recent post My first tournament today!</p>
-          <p>1m ago</p>
-        
-        </li>
+              <li>
+                <div class="section">
+                  <div class="image"><img src="assets/images/avatar-angela-gray.webp"></div>
+                  <div class="comment"><p><b>Angela Gray</b> followed you<span class="dot"></span></p>
+                    <p>5m ago</p>
+                  </div>
+                  
+                </div>
+              </li>
 
-        <li><img src="assets/images/avatar-angela-gray.webp" alt="">
-          <p>Angela Gray followed you</p>
-          <p>5m ago</p>
+              <li>
+                <div class="section">
+                  <div class="image"><img src="assets/images/avatar-jacob-thompson.webp"></div>
+                  <div class="comment"><p><b>Jacob Thompson</b> has joined yout group <b>Chess Club</b><span class="dot"></span></p><p>1 day ago</p></div>
+                  
+                </div>
+              </li>
 
-        </li>
-        <li><img src="assets/images/avatar-jacob-thompson.webp" alt=""><p>Jacob Thompson has joined yout group Chess Club</p>
-        <p>1 day ago</p></li>
-        <li> <img src="assets/images/avatar-rizky-hasanuddin.webp" alt="" srcset=""><p>Rizky Hasanuddin sent you a private message</p>
-              <p>5 days ago</p>
-              <p>Hello, thanks for setting up the Chess Club. I've been a member for a 
-                few weeks now and I'm ready having lots of fun and improving my game.</p>  </li>
-        <li><img src="assets/images/avatar-kimberly-smith.webp" alt="" srcset=""><p>Kimberly Smith commented on your picture</p>
-        <p>1 week ago</p> <img src="assets/images/image-chess.webp" alt="" srcset=""></li>
-        <li> <img src="assets/images/avatar-nathan-peterson.webp" alt="" srcset=""><p>Nathan Peterson reacted to your recent post 5 end-game strategies to
-           increase your win rate</p>  </li>
+              <li> 
+                <div class="section">
+                  <div class="image"><img src="assets/images/avatar-rizky-hasanuddin.webp"></div>
+                  <div class="comment"><p><b>Rizky Hasanuddin</b> sent you a private message<span class="dot"></span></p>
+                    <p>5 days ago</p></div>
+                  
+                  <div class="feedback"><p>Hello, thanks for setting up the Chess Club. I've been a member for afew weeks now and I'm ready having lots of fun and improving my game.</p></div>    
+                </div>
+              </li>
 
-        <li><img src="assets/images/avatar-anna-kim.webp" alt="" srcset=""><p>Anna Kim left the group Chess Club</p>
-        <p>2 weeks ago</p></li>
-      </ul>
-    </article>
-  </main>
+              <li>
+                <div class="section">
+                  <div class="image"><img src="assets/images/avatar-kimberly-smith.webp"></div>
+                  <div class="comment"><p><b>Kimberly Smith</b> commented on your picture<span class="dot"></span></p>
+                    <p>1 week ago</p></div>
+                  
+                  <div class="chess-image"><img src="assets/images/image-chess.webp"></div>
+                </div>
+              </li>
+
+              <li> 
+                <div class="section">
+                  <div class="image"><img src="assets/images/avatar-nathan-peterson.webp"></div>
+                  <div class="comment">
+                    <p><b>Nathan Peterson</b> reacted to your recent post <b>5 end-game strategies to increase your win rate</b><span class="dot"></span></p>
+                    <p>2 weeks ago</p>
+                  </div>
+                  
+                </div>
+              </li>
+
+              <li>
+                <div class="section">
+                  <div class="image"><img src="assets/images/avatar-anna-kim.webp"></div>
+                  <div class="comment"><p><b>Anna Kim</b> left the group <b>Chess Club</b><span class="dot"></span></p>
+                                       <p>2 weeks ago</p>
+                  </div>
+                  
+                </div>
+              </li>
+            </ul>
+          </article>
+        </main>
+      </div>
+    </div>
+
 </body>
 </html>
