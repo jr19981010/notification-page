@@ -57,7 +57,11 @@ li{
    list-style: none; 
    background-color: rgb(246,250,253);
    border-radius: 5px;
-   z-index: 1;
+   position: relative;
+}
+
+li:hover{
+    cursor: pointer;
 }
 
 li .section{
@@ -66,6 +70,8 @@ li .section{
     grid-template-rows: auto;
     padding: 15px;
 }
+
+
 .section .image{
     grid-row: 1;
     grid-column: 1 / 2;
@@ -99,6 +105,7 @@ li .section{
 .image img{
     height: 50px;
     width: 50px;
+
 }
 .section .chess-image{
     grid-row: 1 / 2;
@@ -120,5 +127,18 @@ li .section{
     height: 8px;
     width: 8px;
     transform: translateX(10px);
+
+
+}
+
+
+.unread{
+    background-color: red;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    opacity: 0;
+    position: absolute;
+    border-radius: 5px;
 
 }
