@@ -1,6 +1,9 @@
-import { checkStatus, lists} from "./functions.js";
+import { checkStatus, lists, markAllReads, settingMarkAsRead} from "./functions.js";
+settingMarkAsRead()
 
+markAllReads()
 
 checkStatus();
 
-lists();
+lists()
+

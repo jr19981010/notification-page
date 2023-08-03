@@ -1,4 +1,10 @@
 
+export function settingMarkAsRead(){
+  document.querySelector('[data-counts]').textContent === '0' ?
+  document.querySelector('[data-mark-reads]').style.cursor = 'pointer' :
+  document.querySelector('[data-mark-reads]').style.cursor = 'default'
+}
+
 export function checkStatus() {
     const check = document.querySelectorAll('p span');
     let classNamesArray = [];
@@ -15,37 +21,34 @@ export function checkStatus() {
     };
     document.querySelector('[data-counts]').innerHTML = count;
   };
-  
-
-
-function handleClick(event){
-    let list = event.target;
-    console.log(list)
-    list.style.display = 'none'
-    console.log(getComputedStyle(list).getPropertyValue('display'))
-    list.childEle
-
-    document.querySelector(` `)
-    
-}
 
 export function lists(){
-    document.querySelectorAll('.unread').forEach(list =>{
-    list.addEventListener('click', handleClick)
+    document.querySelectorAll('li').forEach(list =>{
+    list.addEventListener('click', function(){
+      const dotELement = list.querySelector('.dot')
+      if(dotELement){
+        list.style.backgroundColor = 'transparent'
+        dotELement.classList.remove('dot')
+        checkStatus()
+        settingMarkAsRead()
+      }
+    })
+  })
+}
+
+function handleClickRead(){
+  document.querySelectorAll('li').forEach(list =>{
+    const dotELement = list.querySelector('.dot')
+    if(dotELement){
+    document.querySelector('[data-mark-reads]').style.cursor = 'default'
+    list.style.backgroundColor = 'transparent'
+    dotELement.classList.remove('dot')
+    }
+    checkStatus()
   })
 }
 
 
-// export function checkIfGrandChild(){
-//     document.querySelectorAll('.comment p span').forEach(span =>{
-//         span.target
-//         console.log(span.target,'span')
-//     })
-// }
-
-
-// export function checkSpan(){
-//     document.querySelectorAll('ul li').forEach(list =>{
-//     list.addEventListener('click', handleClick)
-//   })
-// }
+export function markAllReads(){
+  document.querySelector('[data-mark-reads]').addEventListener('click', handleClickRead)
+}
