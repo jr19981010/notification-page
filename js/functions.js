@@ -10,7 +10,7 @@ export function checkStatus() {
     let classNamesArray = [];
     let count = 0;
     check.forEach(span => {
-      var classname =  span.getAttribute('class');
+      const classname =  span.getAttribute('class');
       classNamesArray.push(classname);
 
     });
