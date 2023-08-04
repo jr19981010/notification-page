@@ -28,6 +28,7 @@ export function lists(){
       const dotELement = list.querySelector('.dot')
       if(dotELement){
         list.style.backgroundColor = 'transparent'
+        list.style.cursor = 'default'
         dotELement.classList.remove('dot')
         checkStatus()
         settingMarkAsRead()
